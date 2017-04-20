@@ -1,7 +1,11 @@
-This project was ORIGINALLY bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-It has been altered to serve as a starting point for this [tutorial](http://www.tutorialspoint.com/reactjs/)
+----
 
+#### This project was ORIGINALLY bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+#### It has been altered to serve as a starting point for this [tutorial](http://www.tutorialspoint.com/reactjs/)
+
+----
 
 
 ## Everything below is info from the original tutorial
