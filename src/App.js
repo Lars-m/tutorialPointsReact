@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Link, IndexLink } from 'react-router'
+import { Link, IndexLink } from 'react-router'
 
 class App extends Component {
   render() {
@@ -21,13 +21,13 @@ class App extends Component {
               <li><Link activeClassName="active" to="/events">Events</Link></li>
               <li><Link activeClassName="active" to="/refs">Refs</Link></li>
               <li><Link activeClassName="active" to="/keys">Keys</Link></li>
-               <li><IndexLink activeClassName="active" to="/">INFO</IndexLink></li>
-              <li>(Router)</li>
+              <li><Link activeClassName="active" to="/more">More</Link></li>
+              <li><IndexLink activeClassName="active" to="/">INFO</IndexLink></li>
             </ul>
           </div>
           <div className="right-header">
             <img src={logo} className="App-logo" alt="logo" />
-           
+
           </div>
         </div>
         <div className="App-content">

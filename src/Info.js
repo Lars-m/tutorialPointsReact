@@ -1,6 +1,6 @@
 import React from "react"
 
-export default class Home extends React.Component {
+export default class Info extends React.Component {
   render() {
     return (
       <div>
@@ -12,6 +12,9 @@ export default class Home extends React.Component {
           subfolders for (almost) each task in the tutorial, and in those folders a matching file xxxApp.js for each task
         </p>
         <p>Use the <em>xxxApp.js</em> files for each of the <code>App-components</code> in the tutorial</p>
+        <p><b>Note: </b>For all these exercise you don't need the main.js file given for a task.
+         This part is taken care of by, this project</p>
+
       </div>
     )
   }

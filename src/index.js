@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { Router, Route,  hashHistory, IndexRoute } from 'react-router';
-import Home from "./Home";
+import Info from "./Info";
 import JSX_App from "./tasks/jsx/JSX_App"
 import ComponentsApp from "./tasks/components/ComponentsApp";
 import StateApp from "./tasks/state/StateApp";
@@ -14,13 +14,15 @@ import FormsApp from "./tasks/forms/FormsApp";
 import EventApp from "./tasks/events/EventApp";
 import RefsApp from "./tasks/refs/RefsApp";
 import KeysApp from "./tasks/keys/KeysApp";
+import More from "./More";
 import App from "./App";
 
-ReactDOM.render(
-  (
-    <Router history={hashHistory}>
+class RouterComponent extends React.Component{
+  render(){
+    return (
+      <Router history={hashHistory}>
           <Route path="/" component={App}>
-            <IndexRoute component={Home}/>
+            <IndexRoute component={Info}/>
             <Route path="jsx" component={JSX_App} />
             <Route path="components" component={ComponentsApp} />
             <Route path="state" component={StateApp} />
@@ -31,9 +33,13 @@ ReactDOM.render(
             <Route path="forms" component={FormsApp} />
             <Route path="events" component={EventApp} />
             <Route path="refs" component={RefsApp} />
-            <Route path="keys" component={KeysApp} />       
+            <Route path="keys" component={KeysApp} />         
+            <Route path="more" component={More} />         
+            <Route path="*" component={Info} />         
           </Route>
-        </Router>),
-  document.getElementById('root')
-);
+        </Router>
+    )
+  }
+}
 
+ReactDOM.render(<RouterComponent/>, document.getElementById('root'));
